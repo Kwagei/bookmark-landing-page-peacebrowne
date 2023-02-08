@@ -9,6 +9,10 @@
     list-style: none;
   }
 
+  button{
+    cursor: pointer;
+  }
+
 *{
     font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
@@ -72,19 +76,18 @@ header .logo{
     color: #FB5859;
 }
 
-article{
-    padding: 4rem 5rem 4rem 8rem;
+.get-bookmark{
+    padding: 4rem 0rem 3rem 8rem;
     display: flex;
     justify-content: space-between;
-    background-color: peru;
 }
 
 .intro{
-    padding: 5rem 2rem 1rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     display: flex;
     flex-direction: column;
-    background-color: orange
 }
+
 .intro p{
     padding: 1.5rem 0;
     line-height: 1.4rem;
@@ -126,9 +129,26 @@ article{
 }
 
 .intro-img{
-    width: 50%;
-    padding: 1rem 5rem;
     display: flex;
-    align-items: center;
-    background-color: purple;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-right: 1.6rem;
+}
+
+.curve-div{
+    width: 28.5rem;
+    padding: 10rem 0;
+    background-color: #5266DF;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    z-index: 0;
+    border-bottom-left-radius: 145px;
+    margin-bottom: -2.2rem;
+}
+
+.intro-img img{
+    margin-top: -1.2rem;
+    z-index: 1;
 }
