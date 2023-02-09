@@ -91,10 +91,18 @@ header .logo{
     color: #FB5859;
 }
 
-.get-bookmark{
-    padding: 4rem 0rem 3rem 8rem;
+.get-bookmark,.feature-category-bookmark{
+    padding: 0rem 0rem 3rem 8rem;
     display: flex;
     justify-content: space-between;
+}
+
+.feature-category-bookmark{
+    padding-left: 0;
+}
+
+.feature-category-bookmark .intro{
+    padding-right: 8rem !important;
 }
 
 .intro{
@@ -139,7 +147,7 @@ header .logo{
     background-color: white;
 }
 
-.intro-img{
+.right-intro-img{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -147,7 +155,15 @@ header .logo{
     padding-right: 1.6rem;
 }
 
-.curve-div{
+.left-intro-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 1.6rem;
+}
+
+.left-curve{
     width: 28.5rem;
     padding: 10rem 0;
     background-color: #5266DF;
@@ -159,8 +175,26 @@ header .logo{
     margin-bottom: -2.2rem;
 }
 
-.intro-img img{
+.right-curve{
+    width: 32rem;
+    padding: 10rem 0;
+    background-color: #5266DF;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: 0;
+    border-bottom-right-radius: 145px;
+    margin-bottom: 2.2rem;
+}
+
+.right-intro-img img{
     margin-top: -1.2rem;
+    z-index: 1;
+}
+
+.left-intro-img img{
+    margin-bottom: 10rem;
+    margin-left: 5rem;
     z-index: 1;
 }
 
@@ -181,12 +215,12 @@ header .logo{
     display: flex;
     justify-content: space-between;
     width: 40rem;
-    height: 40px;
+    height: 45px;
 }
 
 .feature-category ul li{
-    padding: 0 2rem 1rem 2rem;
-    font-size: small;
+    padding: 0 3rem 1rem 3rem;
+    cursor: pointer;
 }
 
 .feature-category ul li:hover{
@@ -195,5 +229,10 @@ header .logo{
 
 .feature-category a{
     color: #3F4155;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: small;
+}
+
+.bookmark-features p{
+    font-size: 15px;
 }
