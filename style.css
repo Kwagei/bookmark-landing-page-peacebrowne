@@ -98,10 +98,12 @@ header .logo{
 }
 
 .feature-category-bookmark{
+    padding-bottom: 0 !important;
     padding-left: 0;
 }
 
 .feature-category-bookmark .intro{
+    padding-top: 4rem;
     padding-right: 8rem !important;
 }
 
@@ -198,13 +200,66 @@ header .logo{
     z-index: 1;
 }
 
-.bookmark-features{
+.bookmark-features,
+.download-extention{
     padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.download-extention{
+    padding-bottom: 0;
+}
+
+.extensions{
+    padding: 2rem;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+}
+
+.extension-browser{
+    width: 15rem;
+    height: 20rem;
+    /* background-color: yellow; */
+    box-shadow: 0 5px 5px 3px rgb(230, 228, 228);
+    display: flex;
+    border-radius: 6%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.7rem 0 1rem 0;
+    margin: 0 1.4rem;
+}
+
+#firefox{
+    margin-top: 3rem;
+}
+
+#opera{
+    margin-top: 6rem;
+}
+
+.extension-browser h3{
+    padding-top: 1.5rem;
+    padding-bottom: 0.1rem;
+}
+
+.extension-browser h5{
+    padding-bottom: 1.8rem;
+    padding-top: 0.1rem;
+    color: #565663;
+    font-weight: 500;
+}
+
+.extension-browser .dot{
+    padding-bottom: 1rem;
+}
+
+.extension-browser button{
+    margin: 0 auto;
 }
 
 .feature-category{
@@ -236,3 +291,4 @@ header .logo{
 .bookmark-features p{
     font-size: 15px;
 }
+
