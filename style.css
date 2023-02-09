@@ -92,12 +92,13 @@ header .logo{
 }
 
 .get-bookmark,.feature-category-bookmark{
-    padding: 0rem 0rem 3rem 8rem;
+    padding: 3rem 0rem 3rem 8rem;
     display: flex;
     justify-content: space-between;
 }
 
 .feature-category-bookmark{
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-left: 0;
 }
@@ -201,7 +202,8 @@ header .logo{
 }
 
 .bookmark-features,
-.download-extention{
+.download-extention,
+.FAQs-title{
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -210,13 +212,44 @@ header .logo{
     text-align: center;
 }
 
-.download-extention{
+.download-extention,
+.FAQs-title{
     padding-bottom: 0;
 }
 
-.extensions{
+.asked-questions{
     padding: 2rem;
-    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-div{
+    border-top: 0.5px solid #C2C2C6;
+    border-bottom: .1px solid #C2C2C6;
+}
+
+.question,
+.answer
+{
+    width: 28rem;
+    padding: 1rem 1rem 1rem 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.answer p{
+    padding: 0 !important;
+}
+
+.angle{
+    transform: rotateY(1deg);
+}
+
+.extensions{
+    padding: 2rem 0 5rem 0;
     display: flex;
     justify-content: center;
 }
@@ -224,7 +257,6 @@ header .logo{
 .extension-browser{
     width: 15rem;
     height: 20rem;
-    /* background-color: yellow; */
     box-shadow: 0 5px 5px 3px rgb(230, 228, 228);
     display: flex;
     border-radius: 6%;
