@@ -102,11 +102,11 @@ header .logo{
     padding: 3rem 0rem 3rem 2rem;
     display: flex;
     justify-content: space-between;
-    background-color: red;
 }
 
 #right-intro{
-    padding-left: 5rem;
+    padding-left: 8rem;
+    padding-top: 4rem;
 }
 
 .feature-category-bookmark{
@@ -122,10 +122,9 @@ header .logo{
 
 .intro{
     width: 50%;
-    padding: 2rem 2rem 0rem 2rem;
+    /* padding: 2rem 2rem 0rem 2rem; */
     display: flex;
     flex-direction: column;
-    background-color: pink;
 }
 
 #left-intro{
@@ -170,7 +169,6 @@ header .logo{
 }
 
 .right-intro-img{
-    background-color: purple;
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -186,11 +184,10 @@ header .logo{
     align-items: flex-start;
     position: relative;
     padding-left: 1.6rem;
-    background-color: green;
 }
 
 .left-curve{
-    width: 28.5rem;
+    width: 30rem;
     padding: 10rem 0;
     background-color: #5266DF;
     position: absolute;
@@ -215,6 +212,7 @@ header .logo{
 
 .right-intro-img svg{
     margin-top: -1.2rem;
+    margin-left: -3rem;
     z-index: 1;
 }
 
@@ -341,7 +339,6 @@ header .logo{
 
 .feature-category{
     border-bottom: 1px solid #C2C2C6;
-    background-color: crimson;
 }
 
 .feature-category ul {
@@ -370,7 +367,6 @@ header .logo{
 
 .bookmark-features{
     padding: 4rem 4rem 7rem 4rem;
-    background-color: peru;
 }
 
 .bookmark-features p{
