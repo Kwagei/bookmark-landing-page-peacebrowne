@@ -65,21 +65,4 @@ asked_questions.addEventListener('click', display)
 
 const bookmark_feature = element('.bookmark-features')
 const extensions = element('.extensions')
-
-
-
-/**
- * Intersection Observer API - is used to add animation to an element when a page scrolls
- * Got help from the below link.
- * @Source https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
- */
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('move-up');
-        }
-      });
-});
-
-observer.observe(bookmark_feature,extensions);
   
