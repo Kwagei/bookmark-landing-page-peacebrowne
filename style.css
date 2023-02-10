@@ -125,11 +125,16 @@ header .logo{
 }
 
 .right-intro-img svg{
-    animation: move-left 4s ease-in-out 0s  forwards;
+    animation: move-up 4s ease-in-out 0s  forwards;
     visibility: hidden;
 }
 
-@keyframes move-left {
+.move-up{
+    animation: move-up 4s ease-in-out 0s  forwards;
+    visibility: hidden;
+}
+
+@keyframes move-up {
     0%{
         opacity: 0;
         transform: translateY(5rem);
