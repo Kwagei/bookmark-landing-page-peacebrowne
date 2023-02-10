@@ -109,6 +109,58 @@ header .logo{
     padding-top: 4rem;
 }
 
+#right-intro h1{
+    animation: move-right 4s ease-in-out 0s  forwards;
+    visibility: hidden;
+}
+
+#right-intro p{
+    animation: move-right 4s ease-in-out 1s  forwards;
+    visibility: hidden;
+}
+
+#right-intro #browser-btn{
+    animation: move-right 4s ease-in-out 2s  forwards;
+    visibility: hidden;
+}
+
+.right-intro-img svg{
+    animation: move-left 4s ease-in-out 0s  forwards;
+    visibility: hidden;
+}
+
+@keyframes move-left {
+    0%{
+        opacity: 0;
+        transform: translateY(5rem);
+    };
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+    }
+}
+
+@keyframes move-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-9rem);
+    };
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+    }
+}
+
 .feature-category-bookmark{
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -125,6 +177,11 @@ header .logo{
     /* padding: 2rem 2rem 0rem 2rem; */
     display: flex;
     flex-direction: column;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 #left-intro{
@@ -248,7 +305,10 @@ header .logo{
 
 .question-div{
     border-top: 0.5px solid #C2C2C6;
-    border-bottom: .1px solid #C2C2C6;
+}
+
+.bottom{
+    border-bottom: 0.5px solid #C2C2C6;
 }
 
 .question
@@ -258,10 +318,12 @@ header .logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
-.question{
-    cursor: pointer;
+.question h4{
+
+    font-weight: 400;
 }
 
 .question:hover h4{
@@ -285,6 +347,9 @@ header .logo{
 }
 .answer p{
     padding: 0 !important;
+    color: #58585a;
+    line-height: 1.3rem;
+    font-size: small;
 }
 
 .asked-questions button{
@@ -298,15 +363,25 @@ header .logo{
 }
 
 .extension-browser{
-    width: 15rem;
-    height: 20rem;
+    width: 16rem;
+    height: 21rem;
     box-shadow: 0 5px 5px 3px rgb(230, 228, 228);
     display: flex;
     border-radius: 6%;
     flex-direction: column;
     align-items: center;
-    padding: 2.7rem 0 1rem 0;
+    padding: 3.5rem 0 0.1rem 0;
     margin: 0 1.4rem;
+    animation: extensions 2s ease-in forwards;
+}
+
+@keyframes extensions {
+    from{
+        transform: translateY(5rem);
+    };
+    to{
+        transform: translateY(-5rem);
+    }
 }
 
 #firefox{
@@ -354,7 +429,9 @@ header .logo{
     padding: 0 3rem 1rem 3rem;
     cursor: pointer;
 }
-
+#active-category{
+    border-bottom: 3px solid #FB5859;
+}
 .feature-category ul li:hover{
     border-bottom: 3px solid #FB5859;
 }
