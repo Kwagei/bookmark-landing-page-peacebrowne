@@ -105,7 +105,7 @@ header .logo{
 }
 
 #right-intro{
-    padding-left: 8rem;
+    padding-left: 6rem;
     padding-top: 4rem;
 }
 
@@ -280,7 +280,7 @@ h2{
 
 .left-intro-img img{
     margin-bottom: 10rem;
-    margin-left: 8rem;
+    margin-left: 6rem;
     z-index: 1;
 }
 
@@ -424,7 +424,7 @@ h2{
 .feature-category ul {
     display: flex;
     justify-content: space-between;
-    width: 40rem;
+    /* width: 40rem; */
     height: 45px;
 }
 
@@ -520,4 +520,143 @@ input:focus{
 
 .social-medias svg path:hover{
     fill:#FB5859;
+}
+
+#hambuger-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 425px){
+    header {
+        padding: 0 1rem;
+    }
+    header .logo {
+        padding: 1rem 1rem;      }
+
+    #hambuger-menu{
+        display: block;
+        width: 20px;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    #header-nav,
+    .left-curve,
+    .right-curve{
+        display: none;
+    }
+    .get-bookmark{
+        flex-direction: column-reverse;
+        padding: 3rem 0rem 0rem 0rem;
+    }
+
+    .get-bookmark img{
+        width: 100%;
+        height: 60%;
+    }
+
+    .left-intro-img,
+    .right-intro-img{
+        width: auto;
+    }
+    .intro {
+        width: auto;
+        text-align: center;
+    }
+    #right-intro{
+        padding: 0;
+    }
+
+    #left-intro{
+        padding-right: 0 !important;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #right-intro p{
+        padding: 1rem 3rem;
+    }
+
+    #right-intro br ,#left-intro br{
+        display: none ;
+    }
+    #browser-btn button{
+        padding: 0.8rem 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .get-bookmark{
+        flex-direction: column-reverse;
+    }
+
+    .feature-category-bookmark{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .left-intro-img,
+    .right-intro-img{
+        width: auto;
+    }
+
+    .right-intro-img svg{
+        margin: auto;
+    }
+
+    .left-intro-img img{
+        margin: auto;
+    }
+
+    #right-intro{
+        padding: 0;
+    }
+
+    #left-intro{
+        padding-right: 0 !important;
+    }
+
+    .intro {
+        width: auto;
+        text-align: center;
+    }
+
+    header {
+        padding: 0 1rem;
+    }
+
+    #hambuger-menu{
+        display: block;
+        width: 20px;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    #header-nav,
+    .left-curve,
+    .right-curve{
+        display: none;
+    }
+
+    .download-extention{
+        padding-top: 5rem;
+    }
+
+    .extension-browser{
+        margin: 0 0.9rem;
+    }
+
+    .feature-category ul{
+        height: 60px;
+    }
+    .bookmark-features {
+        padding-bottom: 4rem;
+    }
+    
 }
