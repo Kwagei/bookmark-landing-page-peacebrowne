@@ -124,7 +124,7 @@ header .logo{
     visibility: hidden;
 }
 
-.right-intro-img svg{
+.right-intro-img img{
     animation: move-up 4s ease-in-out 0s  forwards;
     visibility: hidden;
 }
@@ -272,7 +272,7 @@ h2{
     margin-bottom: 2.2rem;
 }
 
-.right-intro-img svg{
+.right-intro-img img{
     margin-top: -1.2rem;
     margin-left: -3rem;
     z-index: 1;
@@ -542,12 +542,20 @@ input:focus{
 
     #header-nav,
     .left-curve,
-    .right-curve{
+    /* .right-curve, */
+    .bookmark-feature br{
         display: none;
     }
     .get-bookmark{
         flex-direction: column-reverse;
         padding: 3rem 0rem 0rem 0rem;
+    }
+
+    .right-curve{
+        width: 70%;
+        margin: 0 0 0 0;
+        padding: 6rem;
+        bottom: 4rem;
     }
 
     .get-bookmark img{
@@ -558,7 +566,14 @@ input:focus{
     .left-intro-img,
     .right-intro-img{
         width: auto;
+        justify-content: center;
     }
+
+    .left-intro-img img {
+        width: 85%;
+        margin-left: 0;
+    }
+
     .intro {
         width: auto;
         text-align: center;
@@ -568,7 +583,8 @@ input:focus{
     }
 
     #left-intro{
-        padding-right: 0 !important;
+        width: 100%;
+        padding: 2rem 2rem 2rem 2rem !important;
     }
 
     .intro h1 {
@@ -580,16 +596,63 @@ input:focus{
         padding: 1rem 3rem;
     }
 
-    #right-intro br ,#left-intro br{
+    #right-intro br ,#left-intro br,.bookmark-features p br{
         display: none ;
     }
     #browser-btn button{
         padding: 0.8rem 0.8rem;
     }
+    .feature-category ul{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .right-intro-img{
+        padding: 0;
+    }
+    .right-intro-img img{
+        margin-left: 0;
+    }
+
+    .feature-category ul li{
+        padding: 1rem 3rem;
+        border-top: 1px solid #C2C2C6;
+        border-bottom: 1px solid #C2C2C6;
+    }
+
+    .left-intro-img{
+        padding: 0;
+    }
+
+    .extensions{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-category-bookmark{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .question-div{
+        width: 90%;
+    }
+
+    .answer ,
+    .question{
+        width: 100%;
+    }
+
+    .contact-btn{
+        margin-top: 1.5rem;
+    }
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 426px) and (max-width: 768px){
     .get-bookmark{
         flex-direction: column-reverse;
     }
@@ -606,7 +669,7 @@ input:focus{
         width: auto;
     }
 
-    .right-intro-img svg{
+    .right-intro-img img{
         margin: auto;
     }
 
