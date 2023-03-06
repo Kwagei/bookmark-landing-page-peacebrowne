@@ -650,6 +650,33 @@ input:focus{
         margin-top: 1.5rem;
     }
 
+    .footer-logo{
+        height: 65%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo ul{
+        width: 90%;
+        margin-left: -3rem;
+        margin-top: 1.5rem;
+        flex-direction: column;
+    }
+
+    .footer-logo ul li{
+        margin-bottom: 1rem;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .social-medias{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px){
