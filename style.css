@@ -670,6 +670,7 @@ input:focus{
     .footer-nav{
         flex-direction: column;
         height: 300px;
+        margin-left: -1.5rem;
     }
 
     .social-medias{
